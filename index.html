@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT OOPS</title>
+</head>
+<body>
+ <div align="center">
+     <script>
+         class A
+         {
+             display()
+             {
+                 document.writeln("A is invoked<br>");
+
+             }
+         }
+         class B extends A
+         {
+             display(){
+                 document.writeln("B is invoked");
+             }
+
+         }
+         var a=[new A(), new B()]
+         a.forEach(function(msg)
+         {
+             msg.display();
+         });
+     </script>
+
+
+ 
+ 	 	</div>
+    </body>
+</html>

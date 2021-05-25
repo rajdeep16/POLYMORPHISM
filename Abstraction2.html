@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT OOPS</title>
+</head>
+<body>
+ <div align="center">
+     <h1>ABSTRACTION IN OOPS</h1>
+     <script>
+      
+ function Vehicle()  
+{  
+    this.vehicleName="vehicleName";  
+    throw new Error("You cannot create an instance of Abstract Class");  
+}  
+function Bike(vehicleName)  
+{  
+    this.vehicleName=vehicleName;  
+}  
+
+Bike.prototype=Object.create(Vehicle.prototype);  
+var bike=new Bike("Honda");  
+document.writeln(bike instanceof Bike);
+document.writeln(bike instanceof Bike);
+     </script>
+</div>
+</body>
+</html>

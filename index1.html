@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT OOPS</title>
+</head>
+<body>
+ <div align="center">
+     <script>
+         function A()
+         {
+
+         }
+         A.prototype.display=function()
+         {
+             return "A is invoked"
+         }
+         function B()
+         {
+
+         }
+         B.prototype=Object.create(A.prototype);
+         var a=[new A(), new B()]
+         a.forEach(function(msg)
+         {
+             document.writeln(msg.display()+"<br>");
+         });
+
+     </script>
+
+
+
+
+</div>
+</body>
+</html>
